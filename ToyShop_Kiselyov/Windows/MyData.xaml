@@ -1,0 +1,89 @@
+﻿<Window x:Class="ToyShop_Kiselyov.Windows.MyData"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ToyShop_Kiselyov.Windows"
+        mc:Ignorable="d"
+        Title="MyData" Height="1024" Width="1280" Background="#FB5E25" FontFamily="Comic Sans MS">
+    <Grid>
+        <WrapPanel Margin="20 20 0 0">
+            <Image Source="/Res/Logo.png"
+                   Width="180"
+                   Height="180"/>
+        </WrapPanel>
+        <StackPanel>
+            <Border Background="#CD362B"
+                    Width="600"
+                    Height="135"
+                    CornerRadius="70"
+                    BorderBrush="#EBDED4"
+                    BorderThickness="4"
+                    Margin="0 20 0 0">
+                <TextBlock Text="Мои данные"
+                           FontSize="64"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           Foreground="White"/>
+            </Border>
+            <Border Background="#CD362B"
+                    Width="690"
+                    Height="580"
+                    CornerRadius="40"
+                    BorderBrush="#EBDED4"
+                    BorderThickness="4"
+                    Margin="0 50 0 0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0"
+                                Margin="30 30 0 0">
+                        <TextBlock Text="Имя:"
+                                   FontSize="36"
+                                   Foreground="White"/>
+                        <TextBlock Text="Почта:"
+                                   FontSize="36"
+                                   Foreground="White"
+                                   Margin="0 10 0 0"/>
+                        <TextBlock Text="Телефон:"
+                                   FontSize="36"
+                                   Foreground="White"
+                                   Margin="0 10 0 0"/>
+                        <TextBlock Text="Адрес:"
+                                   FontSize="36"
+                                   Foreground="White"
+                                   Margin="0 10 0 0"/>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1"
+                                Margin="0 30 0 0">
+                        <TextBlock Text=""
+                                   FontSize="36"
+                                   Foreground="#D2C8C8"/>
+                        <TextBlock Text=""
+                                   FontSize="36"
+                                   Foreground="#D2C8C8"
+                                   Margin="0 10 0 0"/>
+                        <TextBlock Text=""
+                                   FontSize="36"
+                                   Foreground="#D2C8C8"
+                                   Margin="0 10 0 0"/>
+                        <TextBlock Text=""
+                                   FontSize="36"
+                                   Foreground="#D2C8C8"
+                                   Margin="0 10 0 0"/>
+                    </StackPanel>
+                    <Button Content="Изменить" 
+                            Style="{DynamicResource ButtonStyleAuth}"
+                            Margin="0 350 0 0"
+                            HorizontalAlignment="Center"
+                            Grid.ColumnSpan="2"/>
+                </Grid>
+            </Border>
+            <Button Style="{DynamicResource ButtonStyleMainMenu}"
+                    Content="Назад"
+                    Margin="0 25 0 0"/>
+        </StackPanel>
+    </Grid>
+</Window>

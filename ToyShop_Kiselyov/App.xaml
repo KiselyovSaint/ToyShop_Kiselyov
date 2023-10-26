@@ -1,0 +1,16 @@
+﻿<Application x:Class="ToyShop_Kiselyov.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:ToyShop_Kiselyov"
+             StartupUri="Windows/AuthWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Res/ButtonStyle.xaml"/>
+                <ResourceDictionary Source="Res/TextBoxStyle.xaml"/>
+                <ResourceDictionary Source="Res/PasswordBoxStyle.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+    
+</Application>
